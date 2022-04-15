@@ -9,7 +9,7 @@ const Banner = () => {
         setIndex(selectedIndex);
       };
     return (
-        <div>
+        <div id='banner'>
             <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
