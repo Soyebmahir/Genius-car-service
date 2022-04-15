@@ -7,13 +7,13 @@ import expert5 from '../../../images/experts/expert-5.jpg'
 import expert6 from '../../../images/experts/expert-6.png'
 import Expert from '../Expert/Expert';
 
-const experts =[
-    {name:"will smith",id:1,img:expert1},
-    {name:"Rock Lee",id:2,img:expert2},
-    {name:"Samsh Hu",id:3,img:expert3},
-    {name:"Tabreez Fuk",id:4,img:expert4},
-    {name:"Arnold Shage",id:5,img:expert5},
-    {name:"Shohainu Dx",id:6,img:expert6}
+const experts = [
+    { name: "will smith", id: 1, img: expert1 },
+    { name: "Rock Lee", id: 2, img: expert2 },
+    { name: "Samsh Hu", id: 3, img: expert3 },
+    { name: "Tabreez Fuk", id: 4, img: expert4 },
+    { name: "Arnold Shage", id: 5, img: expert5 },
+    { name: "Shohainu Dx", id: 6, img: expert6 }
 ]
 
 
@@ -23,9 +23,9 @@ const Experts = () => {
             <h2 className='text-success text-center'>Our Experts</h2>
             <div className='row'>
                 {
-                    experts.map(expert =><Expert
-                    key={expert.id}
-                    expert={expert}></Expert>)
+                    experts.map(expert => <Expert
+                        key={expert.id}
+                        expert={expert}></Expert>)
                 }
 
             </div>

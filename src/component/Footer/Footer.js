@@ -1,12 +1,20 @@
 import React from 'react';
+import { Container, Navbar } from 'react-bootstrap';
+import './Footer.css'
 
 const Footer = () => {
     const date = new Date()
-    const year =date.getFullYear()
+    const year = date.getFullYear()
 
     return (
-        <div>
-           <p className='text-center mt-5'>copy right @  {year}</p>
+        <div >
+            <Navbar bg="dark" variant="dark" fixed="bottom">
+                <Container>
+                    <Navbar.Brand >
+                        <p className='' >copy right @{year}</p>
+                    </Navbar.Brand>
+                </Container>
+            </Navbar>
         </div>
     );
 };
